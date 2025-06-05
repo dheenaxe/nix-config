@@ -190,4 +190,4 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id xrandr --output Virtual-1 --mode 2560x1600
+exec --no-startup-id xrandr --output Virtual-1 --mode 2560x1600 --scale 0.5714x0.5714
