@@ -7,6 +7,6 @@ git clone https://github.com/dheenaxe/nix-config dheenaxe-nix-config
 ```
 
 ```
-ln -fs "$PWD/system/configuration.nix" "/etc/nixos/configuration.nix"
+ln -fs "$PWD/dheenaxe-nix-config/configuration.nix" "/etc/nixos/configuration.nix"
 sudo nixos-rebuild switch
 ```
