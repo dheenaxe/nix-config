@@ -68,8 +68,8 @@ in
   nixpkgs.config.allowUnfree = true;
 
   # Environment Variables
-  environment.variables.EDITOR = "micro";
-  environment.variables.VISUAL = "micro";
+  environment.sessionVariables.EDITOR = "micro";
+  environment.sessionVariables.VISUAL = "micro";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
