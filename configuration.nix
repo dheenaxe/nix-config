@@ -67,10 +67,6 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Environment Variables
-  environment.sessionVariables.EDITOR = "micro";
-  environment.sessionVariables.VISUAL = "micro";
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -102,7 +98,7 @@ in
   
   # i3 configuration
   services.xserver.windowManager.i3.enable = true;
-  services.xserver.windowManager.i3.configFile = "/etc/nixos/i3/config";
+  services.xserver.windowManager.i3.configFile = ./i3/config;
   services.xserver.enable = true;    
 
 
